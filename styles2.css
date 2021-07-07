@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/ESSAI\ BACKGROUND.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-size {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-flex {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    color: #444;
+    padding: 20px 10px;
+}
+
+nav {
+    border-bottom: 2px solid cornflowerblue;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Main content */
+
+.main-content {
+    flex-grow: 1;
+}
+
+.point {
+    color: cornflowerblue;
+    font-family: 'Crete Round', serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    border-radius: 3px 3px 0px 0px;
+    background-image: url(images/footer.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    padding: 20px;
+    text-shadow: 0 0 6px black;
+    margin-bottom: 20px;
+}
+
+footer>div {
+    position: relative;
+}
+
+footer:before {
+    content: "";
+    background: linear-gradient(90deg, #000000e0, #6495ed61);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.lya {
+    background-image: url(images/lya-resized.png);
+    height: 800px;
+    width: 550px;
+}
+
+.harrell {
+    background-image: url(images/harrel-resized.png);
+    height: 800px;
+    width: 550px;
+}
+
+.games {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
