@@ -41,7 +41,6 @@ nav {
     font-weight: bold;
 }
 
-
 /* Main content */
 
 h3 {
@@ -175,9 +174,11 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card.hover .flip-card-inner {
     transform: rotateY(180deg);
 }
+
+
 
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -198,12 +199,12 @@ img {
     background-color: transparent
 }
 
-
 .container {
     position: relative;
     text-align: center;
     color: white;
 }
+
 .container2 {
     position: relative;
     text-align: center;
