@@ -1,0 +1,328 @@
+/* ----GENERAL---- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: url(images/site\ background2.jpg.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: rgb(36, 36, 0);
+    background: linear-gradient(351deg, rgba(36, 36, 0, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(255, 243, 218, 0.5942752100840336) 0%, rgba(246, 215, 153, 0) 100%);
+}
+
+.page-size {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-flex {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9;
+    background-color: white;
+}
+
+.navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    color: #444;
+    padding: 20px 300px;
+}
+
+
+nav {
+    border-bottom: 2px solid cornflowerblue;
+    padding-top: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav li {
+    padding-top: 2px;
+    transition: all 300ms ease;
+    border-radius: 8px 8px 0px 0px;
+}
+
+nav li:hover {
+    background-color: rgba(100, 148, 237, 0.171);
+}
+
+#portfolio-title {
+    scroll-margin-top: 80px;
+}
+
+.point {
+    color: cornflowerblue;
+    font-family: 'Crete Round', serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 10px;
+    padding-bottom: 2px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Main content */
+
+h3 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+.main-content {
+    flex-grow: 1;
+    margin-top: 77px;
+}
+
+/* FOOTER */
+
+footer {
+    border-radius: 3px 3px 0px 0px;
+    background-image: url(images/footer.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    padding: 20px;
+    text-shadow: 0 0 6px black;
+    margin-bottom: 20px;
+}
+
+footer>div {
+    position: relative;
+}
+
+footer:before {
+    content: "";
+    background: linear-gradient(90deg, #000000e0, #6495ed61);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+img {
+    border-radius: 6px;
+}
+
+.portfolio {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+    position: relative;
+}
+
+.portfolio img {
+    border-radius: 6px;
+}
+
+.games {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.games h3 {
+    padding: 0px;
+    /* text-shadow: 0 0 6px black; */
+}
+
+.playerprojects {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 250px 20px;
+    
+}
+
+/* FLIP CARD */
+
+.games .flip-card {
+    background-color: transparent;
+    width: 550px;
+    height: 800px;
+    perspective: 1000px;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.games .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.games .flip-card.hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.games .flip-card:hover {
+    transform: scale(1.02);
+}
+
+.games .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.games .flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.games .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    background-color: transparent
+}
+
+.games .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.games .container2 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* ----PORTFOLIO---- */
+
+.portfolio h3 {
+    padding-right: 59px;
+}
+
+/* FLIP CARD PORTFOLIO */
+
+.portfolio {
+    padding-left: 33px;
+}
+
+.portfolio .flip-card {
+    background-color: transparent;
+    width: 1132px;
+    height: 500px;
+    perspective: 1000px;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.portfolio .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio .flip-card.hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.portfolio .flip-card:hover {
+    transform: scale(1.02);
+}
+
+.portfolio .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.portfolio .flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.portfolio .flip-card-back {
+    color: white;
+    transform: rotateX(180deg);
+    background-color: transparent
+}
+
+.portfolio .container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.portfolio .container2 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.playerfolio {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding-top: 80px;
+}
+
+/* Centered text */
+
+.centered {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
