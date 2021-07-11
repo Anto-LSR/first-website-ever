@@ -2,11 +2,12 @@
 <html>
 
 <head>
-  <title>Antonin Lesueur</title>
+  <title>Antonin Lesueur</title> 
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100|Crete+Round&display=swap"
     rel="stylesheet" />
+
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </head>
@@ -15,12 +16,13 @@
   <div class="main-flex">
     <header>
       <div class="navbar-flex">
-        <h1>Antonin Lesueur<span class="point">.</span></h1> 
+        <h1>Antonin Lesueur<span class="point">.</span></h1>
         <nav>
           <ul>
             <li><a href="#">Projects</a></li>
             <li><a href="#portfolio-title">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about-title">About</a></li>
+            <li><a href="#contact-title">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -39,7 +41,7 @@
               <div class="flip-card-back">
                 <div class="container">
                   <img src="images/Back-lya.png" alt="" />
-                  <div class="centered">
+                  <div class="card-text">
                     <h3>Projet Lya<span class="point">.</span></h3>
                     <p>An online RPG</p>
                     <p>Based on cossack culture with a cyberpunk vibe.</p>
@@ -79,9 +81,9 @@
                 <img src="images/harrel-resized.png" alt="Avatar" />
               </div>
               <div class="flip-card-back">
-                <div class="container2">
+                <div class="container">
                   <img src="images/back-harrell.png" alt="" />
-                  <div class="centered">
+                  <div class="card-text">
                     <h3>Harrell's Manor<span class="point">.</span></h3>
                     <p>A french School project</p>
                     <p>built around lovecraft's universe</p>
@@ -104,28 +106,29 @@
         </div>
 
       </div>
-
+      <h3 id="portfolio-title">Portfolio<span class="point">.</span>
+      </h3>
       <div class="portfolio">
-        <h3 id="portfolio-title">Portfolio<span class="point">.</span>
-        </h3>
+
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="images/portfoliofront.png" alt="Front" />
             </div>
             <div class="flip-card-back">
-              <div class="container3">
+              <div class="container2">
                 <img src="images/portfolioback.png" alt="" />
-                <div class="playerfolio">
-                  <iframe width="75%" height="350" scrolling="no" frameborder="no" allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1226188255&color=%236495ed&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                  <div
-                    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                    <a href="https://soundcloud.com/antolsrmusic" title="Antonin Lesueur" target="_blank"
-                      style="color: #cccccc; text-decoration: none;">Antonin Lesueur</a> · <a
-                      href="https://soundcloud.com/antolsrmusic/sets/porfolio" title="Portfolio" target="_blank"
-                      style="color: #cccccc; text-decoration: none;">Portfolio</a>
-                  </div>
+
+              </div>
+              <div class="playerfolio">
+                <iframe width="75%" height="350" scrolling="no" frameborder="no" allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1226188255&color=%236495ed&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <div
+                  style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                  <a href="https://soundcloud.com/antolsrmusic" title="Antonin Lesueur" target="_blank"
+                    style="color: #cccccc; text-decoration: none;">Antonin Lesueur</a> · <a
+                    href="https://soundcloud.com/antolsrmusic/sets/porfolio" title="Portfolio" target="_blank"
+                    style="color: #cccccc; text-decoration: none;">Portfolio</a>
                 </div>
               </div>
             </div>
@@ -134,49 +137,83 @@
       </div>
 
 
-      <div class="placeholder">
-        <h3>Lorem Ipsum<span class="point">.</span>
+      <div class="about">
+        <h3 id="about-title">About<span class="point">.</span>
         </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet diam risus. Curabitur id neque congue,
-          ullamcorper ex non, maximus nisi. Proin euismod sagittis magna, vel volutpat dui tempor quis. Etiam gravida
-          ornare aliquet. Phasellus ullamcorper pretium dui. Maecenas vel iaculis nunc. Donec vel porttitor nibh. Mauris
-          in elementum neque. Duis eget justo at libero porttitor congue. Maecenas dapibus erat vitae nisi luctus
-          gravida. Donec nec libero mi. Cras gravida ultrices finibus. Vivamus commodo, augue sed posuere congue, tortor
-          dui aliquam massa, non dignissim massa odio vel enim.
+        <div class="bloc-about">
+          <div class="bloc-img">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/about-img.png" alt="Avatar" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="container">
+                    <img src="images/about-img-back.png" alt="" />
+                    <div class="card-text-about">
+                      <h3>Skills<span class="point">.</span></h3>
+                      <p class="skills-p">
+                        <strong>Composition/Production :</strong> Complete soundtracks, cutscenes, ambiances, trailers…
+                        <br><br>
+                        <strong>Sound Software :</strong> Logic Pro X, Cubase, FL Studio… <br><br>
+                        <strong>Sound Hardware :</strong> Instrumental recording, live console/mixers… <br><br>
+                        <strong>Instruments :</strong> I have access to a variety of instruments such as guitars,
+                        basses, keyboards and
+                        traditional instruments. (Banjo, Dobro, Mandolin & percussions…) <br><br>
+                        <strong>Additional Software Skills :</strong> Basic notions of Pro tools, Premiere Pro,
+                        Photoshop
+                      </p>
+                      <h3>Experiences<span class="point">.</span></h3>
+                      <p>
+                        <strong>Video game scoring :</strong> I composed the soundtrack of a French indie RPG based on
+                        cossack culture
+                        with a sci-fi/Cyberpunk vibe. It was a real challenge to merge Eastern Europe sounds with Sci-fi
+                        synths but it was a great experience! <br><br>
+                        <strong>EDM Production :</strong> I’ve been composing many styles of music these years, a LOT of
+                        Synthwave,
+                        Lo-Fi, Soul hip-hop beats. <br><br>
+                        <strong>Pop-Rock Production:</strong> I played with several bands over the years, composing and
+                        playing on stage
+                        Pop-rock music. <br><br>
 
-          Cras non pretium sapien. Integer malesuada fringilla nisi, vitae lacinia massa mattis et. Quisque ut semper
-          neque. Praesent fringilla nulla purus, ut ultricies risus porttitor in. Donec pellentesque quam vel fringilla
-          vulputate. Nunc tincidunt elit sed leo bibendum, vitae convallis neque iaculis. Nam et nisl nibh. Suspendisse
-          vehicula orci eu sapien egestas condimentum. Donec viverra massa erat, vitae eleifend nulla tristique id.
-          Morbi sed nisl eu est malesuada egestas. Nunc at lectus nisl. Nulla commodo facilisis eros, in varius lectus
-          convallis eget. Curabitur sit amet finibus risus.
+                        <strong>Live instruments :</strong> Guitar, bass, drums, percussion & vocals. <br>
+                        <strong>Live Shows :</strong> I’ve played in 60+ venues across Europe.
+                      </p>
+                    </div>
 
-          Curabitur suscipit odio varius risus interdum mollis. Integer non tincidunt dolor. Vivamus mauris nisl,
-          blandit quis placerat at, bibendum sit amet justo. Aliquam convallis massa metus, quis interdum elit aliquet
-          sit amet. Pellentesque et nunc iaculis, porttitor nisi eget, fermentum leo. Pellentesque eget libero at justo
-          facilisis tristique ac in sapien. Mauris a est tincidunt, rhoncus elit quis, dignissim leo. Mauris hendrerit
-          faucibus iaculis.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bloc-description">
+            <p>
+              I'm Antonin, a 27 year-old composer, working mostly on video games and video formats such as
+              short movies. <br><br>
 
-          Ut semper nisi varius, varius leo at, hendrerit nisl. Vestibulum convallis nec tortor sed dignissim. Mauris
-          vulputate ut leo vitae consequat. Nunc a ex vitae dolor tincidunt ullamcorper. Nullam laoreet sapien eget
-          magna cursus, eu sodales erat porttitor. Aliquam placerat quam eu odio interdum ullamcorper. Sed in ante
-          lorem. Mauris ut quam sapien. Pellentesque maximus pharetra orci interdum semper.
+              I’ve been a musician for 11 years now : I play guitar, bass, I sing and I’m pretty good on the keyboard,
+              if it’s qwerty. <br><br>
 
-          Maecenas congue venenatis finibus. Pellentesque magna urna, blandit molestie faucibus et, porttitor id felis.
-          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce tempor
-          volutpat tristique. Vivamus gravida ante finibus, consectetur purus et, luctus lectus. Quisque pharetra
-          gravida lacus non posuere. Etiam cursus, tortor in egestas ullamcorper, diam erat consequat turpis, ut
-          sollicitudin urna purus vitae mi. Sed tempor et dolor nec imperdiet. Donec pellentesque mi purus, et maximus
-          felis luctus quis. Duis sed erat feugiat, aliquet mauris at, ultrices tellus.</p>
+              I can’t even remember when I first started playing video games : I grew up with Zelda, Pokemon, WoW and
+              more recently, I’ve been into The Witcher, Cyberpunk, any games by Supergiant – among other things…
+            </p>
+            <img src="images/Photo-anto.jpg" alt="" class="img-photo-anto">
+          </div>
+        </div>
+
       </div>
 
-      <!-- <footer>
-        <div>
-          <h1>Antonin Lesueur<span class="point">.</span></h1>
-          <div class="copyright">Copyright ® 2021. Tous droits réservés.</div>
-        </div>
-      </footer> -->
     </div>
+
+  </div>
+  </div>
+
+  <div class="contact">
+    <h3 id="contact-title">Contact<span class="point">.</span>
+    </h3>
+
+  </div>
+  </div>
 
 
 </body>

@@ -10,11 +10,11 @@ html {
 }
 
 body {
-    /* background-image: url(images/site\ background2.jpg.png); */
     background-size: cover;
     background-repeat: no-repeat;
     background: rgb(36, 36, 0);
     background: linear-gradient(351deg, rgba(36, 36, 0, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(255, 243, 218, 0.5942752100840336) 0%, rgba(246, 215, 153, 0) 100%);
+    /* background-image: url(images/background-test.jpg); */
 }
 
 .page-size {
@@ -30,6 +30,20 @@ body {
     flex-direction: column;
     position: relative;
 }
+
+
+/* ----LINKS---- */
+
+#portfolio-title, #about-title, #contact-title {
+    scroll-margin-top: 80px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ---HEADER & NAV--- */
 
 header {
     position: fixed;
@@ -49,7 +63,6 @@ header {
     padding: 20px 300px;
 }
 
-
 nav {
     border-bottom: 2px solid cornflowerblue;
     padding-top: 7px;
@@ -67,15 +80,6 @@ nav li:hover {
     background-color: rgba(100, 148, 237, 0.171);
 }
 
-#portfolio-title {
-    scroll-margin-top: 80px;
-}
-
-.point {
-    color: cornflowerblue;
-    font-family: 'Crete Round', serif;
-}
-
 ul {
     list-style: none;
 }
@@ -86,12 +90,7 @@ li {
     padding-bottom: 2px;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* Main content */
+/* ---TEXT--- */
 
 h3 {
     text-align: center;
@@ -106,67 +105,52 @@ p {
     font-family: 'Roboto Mono', monospace, sans-serif;
 }
 
-.main-content {
-    flex-grow: 1;
-    margin-top: 77px;
+.point {
+    color: cornflowerblue;
+    font-family: 'Crete Round', serif;
 }
 
-/* FOOTER */
-
-footer {
-    border-radius: 3px 3px 0px 0px;
-    background-image: url(images/footer.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
-    color: white;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace, sans-serif;
-    padding: 20px;
-    text-shadow: 0 0 6px black;
-    margin-bottom: 20px;
+.games h3 {
+    padding: 0px;
 }
 
-footer>div {
-    position: relative;
+#portfolio-title, #about-title, #contact-title {
+    margin-top: 20px;
 }
 
-footer:before {
-    content: "";
-    background: linear-gradient(90deg, #000000e0, #6495ed61);
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-}
+/* ---IMAGES--- */
 
 img {
     border-radius: 6px;
-}
-
-.portfolio {
-    width: 100%;
-    text-align: center;
-    margin: 30px 0px;
-    position: relative;
 }
 
 .portfolio img {
     border-radius: 6px;
 }
 
+.bloc-description .img-photo-anto {
+    position: absolute;
+    top: 41%;
+    bottom: 0%;
+    left: 12%;
+    right: 0%;
+    height: auto;
+    max-width: 68%;
+    display: flex;
+    border: solid 10px white;
+}
+
+/* Main content */
+
+.main-content {
+    flex-grow: 1;
+    margin-top: 77px;
+}
+
 .games {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-}
-
-.games h3 {
-    padding: 0px;
-    /* text-shadow: 0 0 6px black; */
 }
 
 .playerprojects {
@@ -176,12 +160,26 @@ img {
     right: 0px;
     left: 0px;
     padding: 250px 20px;
-    
+}
+
+.portfolio {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.playerfolio {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding-top: 80px;
 }
 
 /* FLIP CARD */
 
-.games .flip-card {
+.games .flip-card, .bloc-about .flip-card {
     background-color: transparent;
     width: 550px;
     height: 800px;
@@ -190,7 +188,7 @@ img {
     cursor: pointer;
 }
 
-.games .flip-card-inner {
+.games .flip-card-inner, .bloc-about .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -200,15 +198,15 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.games .flip-card.hover .flip-card-inner {
+.games .flip-card.hover .flip-card-inner, .bloc-about .flip-card.hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-.games .flip-card:hover {
+.games .flip-card:hover, .bloc-about .flip-card:hover {
     transform: scale(1.02);
 }
 
-.games .flip-card-front, .flip-card-back {
+.games .flip-card-front, .flip-card-back, .bloc-about .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -216,40 +214,48 @@ img {
     backface-visibility: hidden;
 }
 
-.games .flip-card-front {
+.games .flip-card-front, .bloc-about .flip-card-front {
     background-color: #bbb;
     color: black;
 }
 
-.games .flip-card-back {
+.games .flip-card-back, .bloc-about .flip-card-back {
     color: white;
     transform: rotateY(180deg);
     background-color: transparent
 }
 
-.games .container {
+.games .container, .bloc-about .container {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.games .container2 {
-    position: relative;
-    text-align: center;
-    color: white;
+.card-text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* ----PORTFOLIO---- */
+.card-text-about {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: #572023;
+    padding: 20px;
+    border: solid black;
+    border-radius: 3px;
+    font-size: 95%;
+}
 
-.portfolio h3 {
-    padding-right: 59px;
+.card-text p {
+    text-align: left;
 }
 
 /* FLIP CARD PORTFOLIO */
-
-.portfolio {
-    padding-left: 33px;
-}
 
 .portfolio .flip-card {
     background-color: transparent;
@@ -297,32 +303,50 @@ img {
     background-color: transparent
 }
 
-.portfolio .container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
 .portfolio .container2 {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.playerfolio {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    padding-top: 80px;
+/* ---ABOUT--- */
+
+.bloc-about {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-/* Centered text */
-
-.centered {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.bloc-description {
+    font-size: 22px;
+    color: #444;
+    height: 800px;
+    width: 550px;
+    display: flex;
+    align-items: inherit;
+    background-image: url(images/description-background.png);
+    border: solid 1px #572023;
+    border-radius: 6px;
+    position: relative;
 }
+
+.bloc-description p {
+    margin: 0px 25px 0px 5px;
+    text-align: left;
+    color: white;
+    font-size: 65%;
+    padding-top: 90px;
+}
+
+.card-text-about p {
+    text-align: left;
+}
+
+.skills-p{
+    margin-bottom: 30px;
+}
+
+/* ---TEST--- */
+
+/* ---CONTACT--- */
+
+/* ---FOOTER--- */
