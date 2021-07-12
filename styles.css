@@ -21,6 +21,7 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: -50px;
 }
 
 .main-flex {
@@ -163,7 +164,7 @@ img {
 .games {
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .playerprojects {
@@ -178,7 +179,7 @@ img {
 .portfolio {
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .playerfolio {
@@ -319,7 +320,7 @@ img {
 
 .bloc-about {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .bloc-description {
@@ -437,8 +438,8 @@ textarea, input[type='text'], button {
 
 footer {
     margin-top: 30px;
-    background-color: white;
-    border-top: solid #444;
+    background-color: #444;
+    border-top: solid black;
     border-bottom: none;
     display: flex;
     justify-content: space-between;
@@ -447,27 +448,115 @@ footer {
 footer h3 {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 0px;
     padding-left: 10px;
+    color: white;
 }
 
 .fa-twitter {
     color: cornflowerblue;
+    transition: all 300ms ease;
+}
+.fa-twitter:hover, .fa-soundcloud:hover, .fa-linkedin-in:hover, .fa-discord:hover{
+    transform: scale(1.3);
 }
 
 .fa-soundcloud {
     color: orange;
+    transition: all 300ms ease;
 }
 
 .fa-linkedin-in {
     color: rgb(0, 132, 255);
+    transition: all 300ms ease;
 }
 
 .fa-discord {
-    color: rgb(74, 41, 150);
+    color: white;
+    transition: all 300ms ease;
 }
 
 footer ul {
     padding-top: 13px;
     padding-right: 10px;
+    font-size: 20px;
 }
+
+/* ---POPUP--- */
+.center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .center a {
+    padding:10px 20px;
+    background:#eee;
+    color:#111;
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:5px;
+  }
+
+
+#popup {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+    display:none;
+  }
+  #popup .popup-content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:400px;
+    padding:10px 20px;
+    background:#36393f;
+    border-radius: 6px;
+    border: 8px solid #444444;
+  }
+  #popup a.close-popup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0%;
+    left: 422px;
+    font-size:20px;
+    font-weight:600;
+    text-decoration:none;
+    color: white;
+  }
+  #popup:target {
+    display:block;
+  }
+
+.popup-content img{
+    width: 154px;
+    border-radius: 50%;
+    border: 15px solid #444;
+    background-color: #444;
+  }
+ 
+ .popup-content .greendot-img{
+    width: 40px;
+    border-radius: 50%;
+    border: 8px solid #444;
+    position: absolute;
+    top: 184px;
+    bottom: 0%;
+    left: 150px;
+    right: 0%;
+  }
+  .popup-content h3{
+      color: white;
+
+  }
+  .container-popup{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
