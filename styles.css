@@ -67,7 +67,6 @@ nav {
     padding-top: 7px;
     text-transform: uppercase;
     font-weight: bold;
-
 }
 
 nav li {
@@ -91,7 +90,8 @@ li {
 }
 
 /* ---TEXT--- */
-h1{
+
+h1 {
     font-family: 'Roboto Mono', monospace, serif;
 }
 
@@ -99,7 +99,7 @@ h3 {
     text-align: center;
     font-family: 'Roboto Mono', monospace, sans-serif;
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 10px;
 }
 
@@ -352,26 +352,38 @@ img {
 /* ---TEST--- */
 
 /* ---CONTACT--- */
-.name-email, textarea{
+
+.name-email {
     width: 500px;
 }
 
-.submit-button{
-    width: 500px;
-}
-textarea{
+textarea {
     resize: none;
-    width: 502px;
+    width: 100%;
+    height: 150px;
+    color: white;
 }
 
-input[type='text'], textarea {
+input[type='text'] {
     font-family: 'Roboto Mono', monospace, sans-serif;
-}
-input[type='submit']{
-    width: 503.98px;
+    width: 700px;
+    height: 30px;
+    background-color: #444;
+    border-color: black;
+    color: white;
 }
 
-.container-contact{
+
+button{
+    background-color: #000;
+    border-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 2em;
+}
+
+.container-contact {
     display: flex;
     justify-content: center;
 }
@@ -379,25 +391,44 @@ input[type='submit']{
 .contact {
     display: flex;
     justify-content: center;
-    width: 550px;
 }
 
-form{
-    padding: 10px;
+form {
+    width: 100%;
+    border: solid 1px black;
+    border-radius: 6px;
+    border: solid 1px black;
+    border-radius: 6px;
 }
 
 .form-message {
     display: flex;
-    justify-content: center;
-    margin-top: 3px;
+    justify-content: space-between;
 }
 
-.form-mailinput{
-    margin-top: 3px;
+.form-message textarea {
+    background-color: #444;
+    border-color: black;
 }
 
-.submit-button{
-    margin-top: 3px;
-    width: 504px;
+::placeholder {
+    color: rgb(192, 192, 192);
+}
+
+textarea:focus, input[type='text']:focus {
+    outline: none;
+    background-color: #676767;
+}
+
+textarea:hover, input[type='text']:hover {
+    background-color: #676767;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+}
+
+textarea, input[type='text'], button{
+    transition: 300ms all ease;
 }
 /* ---FOOTER--- */
