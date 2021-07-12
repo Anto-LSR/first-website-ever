@@ -1,5 +1,3 @@
-
-
 (function () {
   window.onload = function () {
     $(".flip-card .flip-card-inner").click(function () {
@@ -8,5 +6,3 @@
     });
   };
 })();
-
-
