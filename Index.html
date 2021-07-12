@@ -2,21 +2,23 @@
 <html>
 
 <head>
-  <title>Antonin Lesueur</title> 
+  <title>Antonin Lesueur</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100|Crete+Round&display=swap"
-    rel="stylesheet" />
-
+  rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="page-size">
   <div class="main-flex">
     <header>
       <div class="navbar-flex">
-        <h1>Antonin Lesueur<span class="point">.</span></h1>
+        <a href="#">
+          <h1>Antonin Lesueur<span class="point">.</span></h1>
+        </a>
         <nav>
           <ul>
             <li><a href="#">Projects</a></li>
@@ -36,15 +38,14 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="images/lya-resized.png" alt="Avatar" />
+                <img src="images/lya-resized-vignette.png" alt="Avatar" />
               </div>
               <div class="flip-card-back">
                 <div class="container">
-                  <img src="images/Back-lya.png" alt="" />
+                  <img src="images/Back-lya-vignette-blur.png" alt="" />
                   <div class="card-text">
                     <h3>Projet Lya<span class="point">.</span></h3>
-                    <p>An online RPG</p>
-                    <p>Based on cossack culture with a cyberpunk vibe.</p>
+                    <p>An online RPG Based on cossack culture with a cyberpunk vibe.</p>
                   </div>
                   <div class="playerprojects">
                     <iframe width="100%" height="500" scrolling="yes" frameborder="no" allow="autoplay"
@@ -78,15 +79,15 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="images/harrel-resized.png" alt="Avatar" />
+                <img src="images/harrel-resized-vignette.png" alt="Front" />
               </div>
               <div class="flip-card-back">
                 <div class="container">
-                  <img src="images/back-harrell.png" alt="" />
+                  <img src="images/Back-harrell-vignette.png" alt="Back" />
                   <div class="card-text">
                     <h3>Harrell's Manor<span class="point">.</span></h3>
-                    <p>A french School project</p>
-                    <p>built around lovecraft's universe</p>
+                    <p>A french School project built around lovecraft's universe</p>
+
                   </div>
                   <div class="playerprojects">
                     <iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay"
@@ -113,22 +114,23 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="images/portfoliofront.png" alt="Front" />
+              <img src="images/portfoliofront-vignette.png" alt="Front" />
             </div>
             <div class="flip-card-back">
-              <div class="container2">
-                <img src="images/portfolioback.png" alt="" />
+              <div class="container">
+                <img src="images/portfolioback-blurred.png" alt="" />
 
-              </div>
-              <div class="playerfolio">
-                <iframe width="75%" height="350" scrolling="no" frameborder="no" allow="autoplay"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1226188255&color=%236495ed&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                <div
-                  style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                  <a href="https://soundcloud.com/antolsrmusic" title="Antonin Lesueur" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Antonin Lesueur</a> · <a
-                    href="https://soundcloud.com/antolsrmusic/sets/porfolio" title="Portfolio" target="_blank"
-                    style="color: #cccccc; text-decoration: none;">Portfolio</a>
+
+                <div class="playerfolio">
+                  <iframe width="75%" height="350" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1226188255&color=%236495ed&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                  <div
+                    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/antolsrmusic" title="Antonin Lesueur" target="_blank"
+                      style="color: #cccccc; text-decoration: none;">Antonin Lesueur</a> · <a
+                      href="https://soundcloud.com/antolsrmusic/sets/porfolio" title="Portfolio" target="_blank"
+                      style="color: #cccccc; text-decoration: none;">Portfolio</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -207,14 +209,32 @@
 
   </div>
   </div>
+  <h3 id="contact-title">Contact<span class="point">.</span></h3>
+  <div class="container-contact">
+    <div class="contact">
 
-  <div class="contact">
-    <h3 id="contact-title">Contact<span class="point">.</span>
-    </h3>
+      <form>
+        <div class="form-nameinput">
+          <input type="text" name="yourname" placeholder="Name" class="name-email">
 
+        </div>
+        <div class="form-mailinput">
+          <input type="text" name="email" placeholder="E-mail" class="name-email">
+        </div>
+        <div class="form-message">
+          <textarea name="typehere" placeholder="Type here..." class="textarea"></textarea>
+        </div>
+        <div class="submit-button">
+          <input type="submit" name="Submit">
+        </div>
+
+
+      </form>
+
+
+    </div>
   </div>
   </div>
-
 
 </body>
 
